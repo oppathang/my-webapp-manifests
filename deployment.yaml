@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-webapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-webapp
+  template:
+    metadata:
+      labels:
+        app: my-webapp
+    spec:
+      containers:
+      - name: my-webapp
+        image: <TÊN_DOCKER_HUB_CỦA_BẠN>/my-webapp:latest # Chút nữa Jenkins sẽ tự động đổi thẻ latest này
+        ports:
+        - containerPort: 80
