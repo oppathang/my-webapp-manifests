@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-webapp
-        image: <TÊN_DOCKER_HUB_CỦA_BẠN>/my-webapp:latest # Chút nữa Jenkins sẽ tự động đổi thẻ latest này
+        image: ghcr.io/oppathang/my-webapp:v_13
         ports:
         - containerPort: 80
