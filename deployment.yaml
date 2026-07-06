@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-webapp
-        image: ghcr.io/oppathang/my-webapp:v_13
+        image: ghcr.io/oppathang/my-webapp:v_14
         ports:
         - containerPort: 80
